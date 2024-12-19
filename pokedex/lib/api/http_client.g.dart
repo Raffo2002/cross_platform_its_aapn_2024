@@ -1,26 +1,19 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-part of 'http_client.dart';
+part 'pokemon_snippet.freezed.dart';
+part 'pokemon_snippet.g.dart';
 
-// **************************************************************************
-// RiverpodGenerator
-// **************************************************************************
+@freezed
+class PokemonSnippet with _$PokemonSnippet {
+  factory PokemonSnippet({
+    required int id,
+    required String name,
+  }) = _PokemonSnippet;
 
-String _$httpClientHash() => r'23c676c1981edc55f5e138b59ac23d48ce167ac5';
+  factory PokemonSnippet.fromJson(Map<String, dynamic> json) =>
+      _$PokemonSnippetFromJson(json);
 
-/// See also [httpClient].
-@ProviderFor(httpClient)
-final httpClientProvider = AutoDisposeProvider<Dio>.internal(
-  httpClient,
-  name: r'httpClientProvider',
-  debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$httpClientHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
+  get id => null;
 
-@Deprecated('Will be removed in 3.0. Use Ref instead')
-// ignore: unused_element
-typedef HttpClientRef = AutoDisposeProviderRef<Dio>;
-// ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package
+  get name => null;
+}
