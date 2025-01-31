@@ -1,5 +1,7 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'router.dart';
+import 'package:riverpod/src/provider.dart';                  
+import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 class CountriesAndFlags extends StatelessWidget {
   const CountriesAndFlags({super.key});
@@ -8,7 +10,8 @@ class CountriesAndFlags extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      routerConfig: router,
-    );
+          );
   }
+
+  watch(AutoDisposeProvider<Dio> httpClientProvider) {}
 }
